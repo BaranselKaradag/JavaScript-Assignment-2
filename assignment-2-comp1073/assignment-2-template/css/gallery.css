@@ -1,0 +1,111 @@
+/* Body styling: Applies a linear gradient background and general styling */
+body {
+	background: linear-gradient(45deg, #f6d365, #fda085, #ffcc70, #ff9a8b); /* More yellow sunset and horizon colors */
+	color: #333; /* Default text color */
+	font-family: Arial, sans-serif; /* Basic sans-serif font for text */
+	text-align: center; /* Centers the text on the page */
+}
+
+/* Styling for the main heading */
+h1 {
+    font-family: 'Dancing Script', cursive; /* Handwritten-style font for the title */
+    font-size: 3em;  /* Larger font size to make it prominent */
+    color: #4a6fa1;  /* Light-dark blue color for the text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow effect for depth */
+    margin-bottom: 30px; /* Adds space below the heading */
+}
+
+/* Styling for the gallery section */
+#gallery {
+    max-width: 800px; /* Maximum width of the gallery */
+    margin: 0 auto; /* Centers the gallery horizontally */
+    background-color: #fff9c4; /* Soft light yellow background */
+    background-image: linear-gradient(45deg, #fff9c4, #ffec8b); /* Light yellow gradient background */
+    padding: 20px; /* Padding inside the gallery container */
+    border-radius: 10px; /* Rounded corners for the gallery */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for a floating effect */
+}
+
+/* Media query for responsive design on screens smaller than 768px */
+@media (max-width: 768px) {
+    #gallery {
+        padding: 15px; /* Reduces padding on smaller screens */
+    }
+
+    ul li img {
+        width: 60px; /* Smaller thumbnail size */
+        height: 40px;
+    }
+
+    .controls button {
+        padding: 8px 15px; /* Smaller button size */
+    }
+}
+
+/* Styling for the figure element containing images */
+figure {
+	position: relative; /* Positions the figure element relative to its normal position */
+}
+
+/* Styling for images inside the figure element */
+figure img {
+	width: 100%; /* Makes the image stretch to fill the container */
+	height: auto; /* Maintains the image aspect ratio */
+	border-radius: 8px; /* Rounded corners for the image */
+	transition: opacity 0.5s ease-in-out; /* Smooth opacity transition for effects */
+}
+
+/* Styling for the caption beneath each image */
+figcaption {
+	margin-top: 10px; /* Adds space above the caption */
+	font-size: 1.1em; /* Slightly larger text for the caption */
+}
+
+/* Styling for the unordered list containing thumbnail images */
+ul {
+	display: flex; /* Flexbox layout to display the thumbnails in a row */
+	justify-content: center; /* Centers the thumbnails horizontally */
+	padding: 0; /* Removes default padding */
+	list-style: none; /* Removes list bullets */
+	margin-top: 20px; /* Adds space above the thumbnails */
+}
+
+/* Styling for each thumbnail image */
+ul li img {
+	width: 80px; /* Thumbnail width */
+	height: 53px; /* Thumbnail height */
+	margin: 0 5px; /* Adds space between the thumbnails */
+	cursor: pointer; /* Changes cursor to a pointer to indicate clickability */
+	transition: filter 0.3s; /* Smooth transition for the filter effect */
+}
+
+/* Styling for the active thumbnail (not grayscale) */
+ul li img.active {
+	filter: none; /* No filter on the active thumbnail */
+}
+
+/* Styling for inactive thumbnails (grayscale effect) */
+ul li img:not(.active) {
+	filter: grayscale(100%); /* Applies a grayscale filter to inactive thumbnails */
+}
+
+/* Styling for the controls (previous/next buttons) */
+.controls {
+	margin: 15px 0; /* Adds space above and below the controls */
+}
+
+/* Styling for the control buttons */
+.controls button {
+	background-color: #87ceeb; /* Sky blue background color for buttons */
+	color: #fff; /* White text color */
+	padding: 10px 20px; /* Padding inside the button */
+	border: none; /* Removes the default border */
+	border-radius: 5px; /* Rounded corners for the buttons */
+	cursor: pointer; /* Changes cursor to a pointer to indicate clickability */
+	transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect for the control buttons */
+.controls button:hover {
+	background-color: #4682b4; /* Darker sky blue for the hover effect */
+}

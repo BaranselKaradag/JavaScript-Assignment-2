@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for the document -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness on mobile devices -->
+    <title>Image Gallery | Slideshow</title> <!-- Title of the webpage that appears in the browser tab -->
+    <!-- Link to external CSS stylesheet for styling the gallery -->
+    <link rel="stylesheet" href="css/gallery.css">
+    <!-- Link to Google Fonts for custom font (Dancing Script) -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section: Contains the main title of the page -->
+    <header>
+        <h1>Image Gallery</h1>
+    </header>
+
+    <!-- Main Content Section: The main gallery content of the page -->
+    <main>
+        <section id="gallery">
+            <!-- Figure section containing an image with a caption -->
+            <figure>
+                <!-- Large version of the image with specific width and height -->
+                <img src="images/flowers-pink-large.jpg" alt="Pink Flowers" width="1200" height="800" />
+                <figcaption>
+                    <!-- Description and attribution of the image -->
+                    <strong>Pink Flowers</strong><br>
+                    Market in Münster, North Rhine-Westphalia, Germany.<br>
+                    <!-- Link to the source of the image -->
+                    <a href="https://commons.wikimedia.org/w/index.php?curid=62071586" target="_blank">View Image Source</a>
+                </figcaption>
+            </figure>
+
+            <!-- Navigation buttons to control the slideshow -->
+            <div class="controls">
+                <button id="prevBtn">Previous</button> <!-- Button to show the previous image -->
+                <button id="nextBtn">Next</button> <!-- Button to show the next image -->
+            </div>
+
+            <!-- Thumbnail images that represent smaller versions of the larger images -->
+            <ul>
+                <li><img src="images/flowers-pink-small.jpg" alt="Pink Flowers" width="240" height="160" /></li>
+                <li><img src="images/flowers-purple-small.jpg" alt="Purple Flowers" width="240" height="160" /></li>
+                <li><img src="images/flowers-red-small.jpg" alt="Red Flowers" width="240" height="160" /></li>
+                <li><img src="images/flowers-white-small.jpg" alt="White Flowers" width="240" height="160" /></li>
+                <li><img src="images/flowers-yellow-small.jpg" alt="Yellow Flowers" width="240" height="160" /></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section: Contains copyright information -->
+    <footer>
+        <p>&copy; 2024 Image Gallery. All Rights Reserved.</p>
+    </footer>
+
+    <!-- External JavaScript file for handling the gallery functionality -->
+    <script src="js/gallery.js"></script>
+
+</body>
+</html>
+	<!-- PHOTO CREDITS
+	Sunflowers in the hamlet Dernekamp, Kirchspiel, Dülmen, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61514522
+
+	Poppies in cornfield, Dülmen, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=40957238
+
+	Daffodils in Sentmaring park, Münster, North Rhine-Westfalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48211466
+
+	Sentmaring Park, Münster, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48576226
+
+	Market in Münster, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=62071586
+	-->
+
